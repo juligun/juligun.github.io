@@ -1,0 +1,63 @@
+.facts{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.planets{
+    margin: auto 0;
+    height: 100vh;
+    text-align: center;
+}
+.planets img{
+    max-height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.facts_box{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 38% 1fr 7%;
+}
+
+.facts .facts_list li, .tab_parameters td{
+    font-size: calc(16px + 6 * ((100vw - 1200px) / 1360));
+}
+
+.facts_box .profile,
+.facts_box .item{
+    padding: 30px 20px 0 30px;
+    border: thin solid white;
+    border-bottom: none;
+    border-right: none;
+}
+
+/*adaptive*/
+.facts_box .item:nth-child(3n){
+    padding: 80px 60px 0 60px;
+
+    word-spacing: calc(7px + 8 * ((100vw - 1200px) / 1360)); /*7px to 15px*/
+    line-height: calc(1.6em + 5 * ((100vw - 1200px) / 1360));
+    font-size: calc(17px + 13 * ((100vw - 1200px) / 1360));/*17px to 30px*/
+    text-align: justify;
+
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.facts_box .item:nth-child(4n){
+    grid-area: 3 / 1 / 4 / 3;
+}
+
+@media (max-width: 1920px){
+    .facts_box .item:nth-child(3n) {
+        padding-top: calc(40px + 40 * ((100vw - 1200px) / 720));
+        padding-left: calc(50px + 10 * ((100vw - 1200px) / 720));
+    }    
+}
+
+@media (max-height: 900px){
+    .facts_box{
+        grid-template-rows: calc(40% - 2 * ((100vh - 700px) / 200)) 1fr 0;
+    }
+}

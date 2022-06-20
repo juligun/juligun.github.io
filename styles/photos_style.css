@@ -1,0 +1,40 @@
+.planet_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.planet_img{
+    padding: 0 calc(5px + 15 * ((100vw - 1200px) / 1360));
+}
+
+.mercury img, .mars img{
+    width: calc(420px + 320 * ((100vw - 1200px) / 1360));
+}
+
+.venus img, .neptun img{
+    width: calc(450px + 350 * ((100vw - 1200px) / 1360));
+}
+
+.earth img{
+    width: calc(400px + 300 * ((100vw - 1200px) / 1360));
+}
+
+.uran img{
+    width: calc(300px + 300 * ((100vw - 1200px) / 1360));
+}
+
+.mars_collonization img{
+    width: calc(480px + 320 * ((100vw - 1200px) / 1360));
+    margin: 0 calc(15px + 15 * ((100vw - 1200px) / 1360));
+}
+
+.jupiter img{
+    width: calc(440px + 300 * ((100vw - 1200px) / 1360));
+}
+
+
+.saturn img{
+    width: calc(480px + 320 * ((100vw - 1200px) / 1360));
+}

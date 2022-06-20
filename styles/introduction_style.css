@@ -1,0 +1,29 @@
+.introduction{
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/main.jpg);
+}
+
+.introduction .header{
+    display: flex;
+    position: relative;
+    top: 20%;
+}
+
+.introduction .header:before,
+.introduction .header:after{
+	width: 100%;
+    height: 1px;
+    margin: auto 0;
+	border: thin solid white;
+    background-color: white;
+    content: '';
+}
+
+.introduction h1{
+    letter-spacing: calc(10px + 20 * (100vw / 2560));
+    line-height: 1.3em;
+    margin-right: calc(30px + 30 * (100vw / 2560));
+    margin-left: calc(58px + 30 * (100vw / 2560));
+    font-size: calc(45px + 23 * (100vw / 2560));
+}

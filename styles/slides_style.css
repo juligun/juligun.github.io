@@ -1,0 +1,90 @@
+.sun, .mercury, .venus, .earth, .mars,
+ .mars_collonization, .jupiter, .saturn,
+ .uran, .neptun{
+    display: flex;
+    flex-direction: row;
+}
+
+.item__img, .item__info > div{
+    border-bottom: thin solid white;
+}
+
+.item__img, .item__info{
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid white;
+}
+
+.item__info > div{
+    padding-left: calc(30px + 30 * ((100vw - 1200px) / 1360));
+    padding-right: calc(40px + 50 * ((100vw - 1200px) / 1360));
+}
+
+.sun .item__info {flex-basis: 65%;}
+.sun .item__img {flex-basis: 35%;}
+
+.mercury .item__info {flex-basis: 64%;}
+.mercury .item__img {flex-basis: 36%;}
+
+.venus .item__info {flex-basis: 70%;}
+.venus .item__img {flex-basis: 30%;}
+
+.earth .item__info {flex-basis: 61%;}
+.earth .item__img {flex-basis: 39%;}
+
+.mars .item__info {flex-basis: 57%;}
+.mars .item__img {flex-basis: 43%;}
+
+.jupiter .item__info{ width: 65%; }
+.jupiter .item__img{ width: 35%; }
+
+.uran .item__info {flex-basis: 53%;}
+.uran .item__img {flex-basis: 47%;}
+
+.neptun .item__info {flex-basis: 62%;}
+.neptun .item__img {flex-basis: 38%;}
+
+.mercury .intro_text{
+    padding: 20px 60px;
+}
+
+.intro_text p:not(:first-child, :last-child){
+    padding-bottom: 0;
+}
+
+@media (max-height: 900px){
+    .mercury .header{height: 10%;}
+}
+
+.sun_satellites .header{
+    display: flex;
+    flex-direction: column;
+}
+
+.sun_satellites .header h2{
+    align-self: start;
+    padding: calc(20px + 10 * ((100vw - 1200px) / 1360)) 0;
+    padding-left: calc(80px + 80 * ((100vw - 1200px) / 1360));
+}
+
+.tab_satellites{
+    width: 92%;
+}
+
+.tab_satellites td{
+    padding: calc(10px + 10 * ((100vw - 1200px) / 1360)) 0;
+    font-size: calc(20px + 8 * ((100vw - 1200px) / 1360));
+}
+
+.tab_satellites td:first-child{
+    padding-left: calc(40px + 30 * ((100vw - 1200px) / 1360));
+}
+
+.tab_satellites tr:not(:last-child){
+    border-bottom: 1px solid grey;
+}
+
+.tab_satellites tr:first-child td{
+    font-weight: bold;
+}
+
