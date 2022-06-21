@@ -1,0 +1,68 @@
+.header_container{
+    position: absolute;
+    height: 140px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(44, 42, 42, .4);
+    z-index: 999;
+}
+
+.menu{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header_container .menu{
+    font-size: 60px;
+    /* color: white; */
+}
+
+
+
+.nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav li{
+    width: calc(7px + 5 * ((100vw - 1200px) / 1360));
+    height: calc(7px + 3 * ((100vw - 1200px) / 1360));
+    margin: 0 calc(15px + 10 * ((100vw - 1200px) / 1360));
+    border: 2px solid;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+.nav li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav li:hover{
+    background-color: white;
+    transition: all .3s;
+}
+
+.nav a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.5);
+}
+
+.active{
+    transform: scale(1.5);
+    background-color: white;
+    transition: all .3s;
+}
+
