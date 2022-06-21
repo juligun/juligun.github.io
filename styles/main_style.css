@@ -52,7 +52,6 @@ h2:not(.header h2){
 
 .profile{
     padding: 20px calc(30px + 30 * ((100vw - 1200px) / 1360));
-    /* border-bottom: thin solid white; */
 }
 
 .profile h2{
@@ -77,8 +76,6 @@ h2:not(.header h2){
 .slide > div:last-child .header{
     justify-content: end;
 }
-
-
 
 .intro_text p, h3,
 .facts_list li{
