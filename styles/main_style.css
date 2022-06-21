@@ -1,27 +1,38 @@
-/***/body{
+body{
     font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
     font-size: 18px;
     color: white;
 }
 
+.slide{
+    margin-bottom: 50px;
+}
+
+.slide:not(:last-child :first-child){
+    /* margin-top: 1px; */
+    border-top: thin solid white;
+    /* border-bottom: thin solid white; */
+}
+
 .main_container{
-    width: 100vh;
-    height: 100vw;
-    transform: rotate(-90deg) translateX(-100vh);
-    transform-origin: top left;
+    width: 100vw;
+    height: 100vh;
+    /* transform: rotate(-90deg) translateX(-100vh); */
+    /* transform-origin: top left; */
     overflow-y: scroll;
-    overflow-x: hidden;
-    position: absolute;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 .wrapper{
-    padding-top: 4px;
+    /* padding-top: 4px; */
     display: flex;
-    flex-direction: row;
-    width: 1600vw;
+    flex-direction: column;
+    /* height: 1600vh; */
+    background-color: black;
 
-    transform: rotate(90deg) translateY(-100vh);
-    transform-origin: top left;
+    /* transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left; */
 }
 
 .wrapper > div{
@@ -31,14 +42,7 @@
 }
 
 ::-webkit-scrollbar {
-    width: 5px;
-    background-color: black;
-}
-
-::-webkit-scrollbar-thumb {
-    background: white;
-    border-radius: 10px;
-    width: 10px;
+    display: none;
 }
 
 h2:not(.header h2){
@@ -48,7 +52,7 @@ h2:not(.header h2){
 
 .profile{
     padding: 20px calc(30px + 30 * ((100vw - 1200px) / 1360));
-    border-bottom: thin solid white;
+    /* border-bottom: thin solid white; */
 }
 
 .profile h2{
@@ -66,9 +70,15 @@ h2:not(.header h2){
     font-size: calc(40px + 20 * ((100vw - 1200px) / 1360));
 }
 
+.venus .header{
+    padding-top: calc(0px + 30 * ((100vw - 1200px) / 1360));
+}
+
 .slide > div:last-child .header{
     justify-content: end;
 }
+
+
 
 .intro_text p, h3,
 .facts_list li{

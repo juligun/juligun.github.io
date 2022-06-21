@@ -5,19 +5,18 @@
     flex-direction: row;
 }
 
-.item__img, .item__info > div{
-    border-bottom: thin solid white;
-}
-
 .item__img, .item__info{
     display: flex;
     flex-direction: column;
-    border-right: 1px solid white;
 }
 
 .item__info > div{
     padding-left: calc(30px + 30 * ((100vw - 1200px) / 1360));
     padding-right: calc(40px + 50 * ((100vw - 1200px) / 1360));
+}
+
+.slide:not(.sun_satellites, .introduction, .terrestrial, .outer) > div:first-child{
+    border-right: 1px solid white;
 }
 
 .sun .item__info {flex-basis: 65%;}
@@ -92,4 +91,3 @@
 .tab_satellites tr:first-child td{
     font-weight: bold;
 }
-

@@ -27,10 +27,8 @@
 
 .facts_box .profile,
 .facts_box .item{
+    /* border-top: 1px solid white; */
     padding: 30px 20px 0 30px;
-    border: thin solid white;
-    border-bottom: none;
-    border-right: none;
 }
 
 /*adaptive*/
