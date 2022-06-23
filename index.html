@@ -12,66 +12,67 @@
     <link rel="stylesheet" href="styles/facts_style.css">
     <link rel="stylesheet" href="styles/photos_style.css">
     <link rel="stylesheet" href="styles/terrestrial_planets.css">
+    <link rel="stylesheet" href="styles/quiz_style.css">
     <title>Document</title>
 </head>
 <body>
     <div class="header_container">
         <div class="menu">
-            <h2>Сонячна система</h2>
+            <h2 onclick="getScroll()">Сонячна система</h2>
             <ul class="nav" id="nav_buttons">
-                <li>
+                <li class="active introduction">
                     <a href="#introduction"></a>
                 </li>
-                <li>
+                <li class="facts">
                     <a href="#facts"></a>
                 </li>
-                <li>
+                <li class="sun">
                     <a href="#sun"></a>
                 </li>
-                <li>
+                <li class="sun_satellites">
                     <a href="#sun_satellites"></a>
                 </li>
-                <li>
+                <li class="terrestrials">
                     <a href="#terrestrials"></a>
                 </li>
-                <li>
+                <li class="mercury">
                     <a href="#mercury"></a>
                 </li>
-                <li>
+                <li class="venus">
                     <a href="#venus"></a>
                 </li>
-                <li>
+                <li class="earth">
                     <a href="#earth"></a>
                 </li>
-                <li>
+                <li class="mars">
                     <a href="#mars"></a>
                 </li>
-                <li>
+                <li class="mars_collonization">
                     <a href="#mars_collonization"></a>
                 </li>
-                <li>
+                <li class="outer">
                     <a href="#outer"></a>
                 </li>
-                <li>
+                <li class="jupiter">
                     <a href="#jupiter"></a>
                 </li>
-                <li>
+                <li class="saturn">
                     <a href="#saturn"></a>
                 </li>
-                <li>
+                <li class="uran">
                     <a href="#uran"></a>
                 </li>
-                <li>
+                <li class="neptun">
                     <a href="#neptun"></a>
                 </li>
-                <li>
+                <li class="quiz">
                     <a href="#quiz"></a>
                 </li>
             </ul>
         </div>
     </div>
     <div class="main_container">
-        <div class="wrapper">
+        <div class="wrapper" id="main_wrapper">
             <div class="slide introduction" id="introduction">
                 <div class="header">
                     <h1>Сонячна система</h1>
@@ -878,11 +879,29 @@
                 </div>
             </div>
             <div class="slide quiz" id="quiz">
-                
+                <div class="item_info">
+                    <div class="header">
+                        <h2>Квіз</h2>
+                    </div>
+                </div>
+                <div class="flash-cards">
+                    <div class="flip_container">
+                        <div class="card">
+                            <div class="front">
+                                <h3 id="question">Які дві планети найближчі до Землі?</h3>
+                            </div>
+                            <div class="back">
+                                <h3 id="answer">Венера і Марс</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_info"></div>
             </div>
         </div>
     </div>
     <div class="footer_container"></div>
+    <script type="text/javascript" src="scripts/flash_cards.js"></script>
     <script type="text/javascript" src="scripts/navigate.js"></script>
 </body>
 </html>

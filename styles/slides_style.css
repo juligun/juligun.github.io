@@ -15,7 +15,7 @@
     padding-right: calc(40px + 50 * ((100vw - 1200px) / 1360));
 }
 
-.slide:not(.sun_satellites, .introduction, .terrestrial, .outer) > div:first-child{
+.slide:not(.sun_satellites, .introduction, .terrestrial, .outer, .quiz) > div:first-child{
     border-right: 1px solid white;
 }
 

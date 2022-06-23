@@ -1,5 +1,5 @@
 .header_container{
-    position: absolute;
+    position: fixed;
     height: 140px;
     width: 100%;
 
@@ -24,8 +24,6 @@
     font-size: 60px;
     /* color: white; */
 }
-
-
 
 .nav{
     display: flex;

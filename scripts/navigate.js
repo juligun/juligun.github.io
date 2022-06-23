@@ -1,15 +1,22 @@
 let arrButtons = document.querySelectorAll('.nav li');
-arrButtons.forEach(element => {
-    element.addEventListener('click', () => pinNavButton(element))
-});
-arrButtons[0].classList.add('active');
+let arrSections = document.querySelectorAll('.slide');
 
-function pinNavButton(element){
-    unpinNavButton();
-    element.classList.add('active');
-}
+window.addEventListener("scroll", 
+function () {
+    let current = "";
 
-function unpinNavButton(){
-    let elemenet = document.querySelectorAll('.nav .active');
-    elemenet[0].classList.remove('active');
-}
+    arrSections.forEach((section) => {
+        let sectionTop = section.offsetTop;
+        if(this.window.pageYOffset >= sectionTop - 50){
+            current = section.getAttribute("id");
+        }
+    });
+
+    arrButtons.forEach((button) => {
+        button.classList.remove("active");
+        if(button.classList.contains(current)){
+            button.classList.add('active');
+        }
+    });
+
+}, false);
