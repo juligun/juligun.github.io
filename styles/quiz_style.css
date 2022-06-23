@@ -1,0 +1,88 @@
+div.quiz{
+    position: relative;
+}
+
+.quiz .item_info{
+    height: calc(100px + 30 * ((100vw - 1200px) / 1360));
+    padding-left: calc(30px + 30 * ((100vw - 1200px) / 1360));
+    border-bottom: 1px solid white;
+    background-image: url(../images/star_sky.jpg);
+}
+
+.quiz .item_info:last-child{
+    border-top: 1px solid white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.flash-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flip_container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 1200;
+}
+
+.card, .front, .back{
+    width: calc(320px + 220 * ((100vw - 1200px) / 1360));
+    height: calc(500px + 220 * ((100vw - 1200px) / 1360));
+    transition: all .9s;
+}
+
+._flip{
+    transform: rotateY(-180deg);
+}
+
+.card{
+    transition: all .5s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.front, .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    border: 1px solid white;
+    border-radius: 20px;
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.front h3, .back h3{
+    padding: 0 30px;
+    font-size: calc(20px + 20 * ((100vw - 1200px) / 1360));
+    text-align: center;
+}
+
+.back{
+    transform: rotateY(-180deg);
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.left {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+}
