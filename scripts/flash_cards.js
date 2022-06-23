@@ -41,14 +41,14 @@ let backBtn = document.querySelector('.arrow.left');
 let nextBtn = document.querySelector('.arrow.right');
 
 nextBtn.addEventListener('click', () => {
-    if(currentCardNum <= 15){
+    if(currentCardNum < 16){
         currentCardNum++;
         getNewCard();
     }
 });
 
 backBtn.addEventListener('click', () => {
-    if(currentCardNum >= 1){
+    if(currentCardNum > 1){
         currentCardNum--;
         getNewCard();
     }
