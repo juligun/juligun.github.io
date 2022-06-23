@@ -11,9 +11,11 @@ div.quiz{
 
 .quiz .item_info:last-child{
     border-top: 1px solid white;
-    position: absolute;
     width: 100%;
-    bottom: 0;
+}
+
+.quiz .flash-cards{
+    height: 88%;
 }
 
 .flash-cards{
@@ -24,11 +26,10 @@ div.quiz{
 }
 
 .flip_container{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    perspective: 1200;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 30%;
 }
 
 .card, .front, .back{
@@ -72,9 +73,17 @@ div.quiz{
 
 .arrow {
     border: solid white;
-    border-width: 0 3px 3px 0;
+    border-width: 0 5px 5px 0;
     display: inline-block;
     padding: 3px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.arrow:hover{
+    border-width: 0 7px 7px 0;
+    border-radius: 3px;
 }
 
 .right {
@@ -85,4 +94,10 @@ div.quiz{
 .left {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
+}
+
+.hide{
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
 }

@@ -118,3 +118,10 @@ h3{
 .tab_parameters tr:not(:last-child){
     border-bottom: 1px solid grey;
 }
+
+.copyright{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-size: 20px;
+}
