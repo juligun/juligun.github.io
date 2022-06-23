@@ -38,3 +38,51 @@
 .saturn img{
     width: calc(480px + 320 * ((100vw - 1200px) / 1360));
 }
+
+@media (max-height: 800px){
+    
+    .mercury img, .mars img{
+        width: calc(280px + 300 * ((100vw - 1200px) / 1360));
+    }
+    
+    .venus img, .neptun img{
+        width: calc(400px + 350 * ((100vw - 1200px) / 1360));
+    }
+    
+    .earth img{
+        width: calc(330px + 300 * ((100vw - 1200px) / 1360));
+    }
+    
+    .uran img{
+        width: calc(250px + 300 * ((100vw - 1200px) / 1360));
+    }
+
+    .neptun img{
+        width: calc(350px + 300 * ((100vw - 1200px) / 1360));
+    }
+    
+    .mars_collonization img{
+        width: calc(480px + 320 * ((100vw - 1200px) / 1360));
+        margin: 0 calc(15px + 15 * ((100vw - 1200px) / 1360));
+    }
+    
+    .jupiter img{
+        width: calc(360px + 300 * ((100vw - 1200px) / 1360));
+    }
+    
+    .jupiter .item__info{ width: 60%; }
+    .jupiter .item__img{ width: 40%; }
+
+    .neptun .item__info {flex-basis: 64%;}
+    .neptun .item__img {flex-basis: 36%;}
+
+    .mercury .item__info {flex-basis: 64%;}
+    .mercury .item__img {flex-basis: 36%;}
+
+    .uran .item__info {flex-basis: 60%;}
+    .uran .item__img {flex-basis: 40%;}
+    
+    .saturn img{
+        width: calc(480px + 320 * ((100vw - 1200px) / 1360));
+    }
+}

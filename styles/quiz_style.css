@@ -2,20 +2,28 @@ div.quiz{
     position: relative;
 }
 
-.quiz .item_info{
-    height: calc(100px + 30 * ((100vw - 1200px) / 1360));
-    padding-left: calc(30px + 30 * ((100vw - 1200px) / 1360));
+.quiz .item_info{    
     border-bottom: 1px solid white;
     background-image: url(../images/star_sky.jpg);
 }
 
-.quiz .item_info:last-child{
-    border-top: 1px solid white;
-    width: 100%;
+.quiz .header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding-left: calc(30px + 30 * ((100vw - 1200px) / 1360));
 }
 
-.quiz .flash-cards{
-    height: 88%;
+.quiz .item_info:last-child{
+    border-top: 1px solid white;
+    width: 80%;
+}
+
+.quiz .item_wrapper{
+    height: calc(100% - 101px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .flash-cards{
@@ -97,8 +105,8 @@ div.quiz{
 }
 
 .arrow:hover{
-    border-width: 0 7px 7px 0;
-    border-radius: 3px;
+    /* border-width: 0 7px 7px 0;
+    border-radius: 3px; */
 }
 
 .right {

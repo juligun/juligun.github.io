@@ -17,7 +17,6 @@ body{
 
 .main_container{
     width: 100vw;
-    overflow-y: scroll;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
@@ -43,6 +42,10 @@ h2:not(.header h2){
     margin-bottom: calc(25px + 5 * ((100vw - 1200px) / 1360));
 }
 
+.header h2{
+    
+}
+
 .profile{
     padding: 20px calc(30px + 30 * ((100vw - 1200px) / 1360));
 }
@@ -55,8 +58,13 @@ h2:not(.header h2){
 .header:not(.list .header){
     display: flex;
     align-items: center;
-    height: calc(100px + 5 * ((100vw - 1200px) / 1360));
+    /* height: calc(100px + 5 * ((100vw - 1200px) / 1360)); */
 }
+
+/* .header:not(.list .header, .sun header, .sun_satellites .header, .terretrials .header, .outer .header) h2{
+    padding-top: 20px;
+    height: calc(100px + 5 * ((100vw - 1200px) / 1360));
+} */
 
 .header h2{
     font-size: calc(40px + 20 * ((100vw - 1200px) / 1360));

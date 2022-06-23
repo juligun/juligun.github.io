@@ -15,15 +15,20 @@
     padding-right: calc(40px + 50 * ((100vw - 1200px) / 1360));
 }
 
+
 .slide:not(.sun_satellites, .introduction, .terrestrial, .outer, .quiz) > div:first-child{
     border-right: 1px solid white;
+}
+
+.mercury .header {
+    padding-left: calc(30px + 30 * ((100vw - 1200px) / 1360));
 }
 
 .sun .item__info {flex-basis: 65%;}
 .sun .item__img {flex-basis: 35%;}
 
-.mercury .item__info {flex-basis: 64%;}
-.mercury .item__img {flex-basis: 36%;}
+.mercury .item__info {flex-basis: 68%;}
+.mercury .item__img {flex-basis: 32%;}
 
 .venus .item__info {flex-basis: 70%;}
 .venus .item__img {flex-basis: 30%;}
